@@ -3,8 +3,8 @@ package factory.example_1._02_after;
 
 public class Client {
     public static void main(String[] args) {
-        Coffee coffee = makeCoffee(new AmericanoCoffeeFactory(), "Americano", "Hot");
-        print(coffee);
+        print(makeCoffee(new AmericanoCoffeeFactory(), "Americano", "Hot"));
+        print(makeCoffee(new EspressoCoffeeFactory(), "Espresso", "Hot"));
     }
 
     private static Coffee makeCoffee(CoffeeFactory factory, String name, String temperature) {
